@@ -3,10 +3,11 @@ ul {
     flex-wrap: wrap;
 }
 
-.book {
+app-book {
     list-style: none;
     text-overflow: ellipsis;
     width: 25%;
     text-align: center;
     cursor: pointer;
+    margin-bottom: 15px;
 }

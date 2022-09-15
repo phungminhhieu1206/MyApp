@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Book } from 'src/app/interface/Book';
+import { list_books } from './data_books';
 
 @Component({
   selector: 'app-books',
@@ -7,64 +8,10 @@ import { Book } from 'src/app/interface/Book';
   styleUrls: ['./books.component.css'],
 })
 export class BooksComponent implements OnInit {
-  books: Book[] = [
-    {
-      name: 'Happy Cookbook',
-      author: 'Steve Doocy',
-      img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
-      price: 500,
-    },
-    {
-      name: 'Happy Cookbook',
-      author: 'Steve Doocy',
-      img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
-      price: 500,
-    },
-    {
-      name: 'Happy Cookbook',
-      author: 'Steve Doocy',
-      img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
-      price: 500,
-    },
-    {
-      name: 'Happy Cookbook',
-      author: 'Steve Doocy',
-      img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
-      price: 500,
-    },
-    {
-      name: 'Happy Cookbook',
-      author: 'Steve Doocy',
-      img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
-      price: 500,
-    },
-    {
-      name: 'Happy Cookbook',
-      author: 'Steve Doocy',
-      img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
-      price: 500,
-    },
-    {
-      name: 'Happy Cookbook',
-      author: 'Steve Doocy',
-      img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
-      price: 500,
-    },
-    {
-      name: 'Happy Cookbook',
-      author: 'Steve Doocy',
-      img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
-      price: 500,
-    },
-    {
-      name: 'Happy Cookbook',
-      author: 'Steve Doocy',
-      img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
-      price: 500,
-    },
-  ];
+  books: Book[] = list_books;
 
   isShowing: boolean = true;
+  card: Book[] = [];
 
   constructor() {}
 
@@ -72,5 +19,9 @@ export class BooksComponent implements OnInit {
 
   toggleBooks = () => {
     this.isShowing = !this.isShowing;
+  };
+
+  addToCard = (event: Book) => {
+    console.log(event);
   };
 }
