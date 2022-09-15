@@ -8,17 +8,42 @@ import { Component, OnInit } from '@angular/core';
 export class BooksComponent implements OnInit {
   books: Book[] = [
     {
-      name: 'The Simply Happy Cookbook',
+      name: 'Happy Cookbook',
       author: 'Steve Doocy',
       img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
     },
     {
-      name: 'The Simply Happy Cookbook',
+      name: 'Happy Cookbook',
       author: 'Steve Doocy',
       img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
     },
     {
-      name: 'The Simply Happy Cookbook',
+      name: 'Happy Cookbook',
+      author: 'Steve Doocy',
+      img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
+    },
+    {
+      name: 'Happy Cookbook',
+      author: 'Steve Doocy',
+      img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
+    },
+    {
+      name: 'Happy Cookbook',
+      author: 'Steve Doocy',
+      img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
+    },
+    {
+      name: 'Happy Cookbook',
+      author: 'Steve Doocy',
+      img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
+    },
+    {
+      name: 'Happy Cookbook',
+      author: 'Steve Doocy',
+      img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
+    },
+    {
+      name: 'Happy Cookbook',
       author: 'Steve Doocy',
       img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
     },
