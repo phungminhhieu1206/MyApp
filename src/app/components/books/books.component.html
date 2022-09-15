@@ -5,8 +5,12 @@
 </button>
 
 <ul *ngIf="isShowing">
-    <li *ngFor="let item of books">
-        <img [src]="item.img_url" [alt]="item.name" width="200">
-        <p>{{item.name}} by {{item.author}}</p>
-    </li>
+    <ng-container *ngFor="let item of books; let i = index">
+        <li>
+            <p>Book: {{i+1}}</p>
+            <img [src]="item.img_url" [alt]="item.name" width="200">
+            <p>{{item.name}} by {{item.author}}</p>
+        </li>
+    </ng-container>
+
 </ul>
