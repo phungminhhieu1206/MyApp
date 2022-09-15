@@ -13,9 +13,14 @@ export class BooksComponent implements OnInit {
   isShowing: boolean = true;
   card: Book[] = [];
 
-  constructor() {}
+  constructor() {
+    console.log({contructor: 'Contructor run'});
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log({OnInit: 'OnInit run and start get api'});
+    
+  }
 
   toggleBooks = () => {
     this.isShowing = !this.isShowing;
