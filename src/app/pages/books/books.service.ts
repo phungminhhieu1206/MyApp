@@ -1,5 +1,13 @@
-export const list_books = [
-  {
+import { Injectable } from '@angular/core';
+
+@Injectable()
+export class BooksService {
+
+  constructor() { }
+
+  getBooks = () => {
+    return [
+      {
     name: 'Happy Cookbook 1',
     author: 'Steve Doocy',
     img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
@@ -59,4 +67,6 @@ export const list_books = [
     img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
     price: 400,
   },
-];
+    ]
+  }
+}
