@@ -25,7 +25,13 @@ export class BooksComponent implements OnInit {
   showButton = () => {
     this.isDisabled = false;
     this.isHiddenButton = true;
-  }
+  };
+
+  myName: string = '';
+  handlerInput = (event: any) => {
+    console.log(event.target.value);
+    this.myName = event.target.value;
+  };
 
   ngOnInit(): void {}
 }

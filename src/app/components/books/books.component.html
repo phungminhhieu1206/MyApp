@@ -1,6 +1,9 @@
 <h2>List books:</h2>
 <button (click)="clickButton()" [disabled]="isDisabled">Show Books</button>
-<button (click)="showButton()" [hidden]="isHiddenButton">Show Button</button>
+<button (click)="showButton()" [hidden]="isHiddenButton">Show Button</button><br>
+<input type="text" style="margin-top: 5px;" (input)="handlerInput($event)">
+
+<p>{{myName}}</p>
 <ul>
     <li>
         <img [src]="img_url" [alt]="name" width="200">
