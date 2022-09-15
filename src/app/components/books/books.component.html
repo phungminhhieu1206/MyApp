@@ -9,7 +9,7 @@
         <li>
             <p>Book: {{i+1}}</p>
             <img [src]="item.img_url" [alt]="item.name" width="200">
-            <p>{{item.name}} by {{item.author}}</p>
+            <p>{{item.name | titlecase}} by {{item.author | uppercase}}</p>
         </li>
     </ng-container>
 
