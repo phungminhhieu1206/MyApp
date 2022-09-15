@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Book } from 'src/app/interface/Book';
 
 @Component({
   selector: 'app-books',
@@ -11,41 +12,55 @@ export class BooksComponent implements OnInit {
       name: 'Happy Cookbook',
       author: 'Steve Doocy',
       img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
+      price: 500,
     },
     {
       name: 'Happy Cookbook',
       author: 'Steve Doocy',
       img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
+      price: 500,
     },
     {
       name: 'Happy Cookbook',
       author: 'Steve Doocy',
       img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
+      price: 500,
     },
     {
       name: 'Happy Cookbook',
       author: 'Steve Doocy',
       img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
+      price: 500,
     },
     {
       name: 'Happy Cookbook',
       author: 'Steve Doocy',
       img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
+      price: 500,
     },
     {
       name: 'Happy Cookbook',
       author: 'Steve Doocy',
       img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
+      price: 500,
     },
     {
       name: 'Happy Cookbook',
       author: 'Steve Doocy',
       img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
+      price: 500,
     },
     {
       name: 'Happy Cookbook',
       author: 'Steve Doocy',
       img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
+      price: 500,
+    },
+    {
+      name: 'Happy Cookbook',
+      author: 'Steve Doocy',
+      img_url: 'https://cdn-amz.woka.io/images/I/81HE+JDes-L._SR476,476_.jpg',
+      price: 500,
     },
   ];
 
@@ -58,10 +73,4 @@ export class BooksComponent implements OnInit {
   toggleBooks = () => {
     this.isShowing = !this.isShowing;
   };
-}
-
-interface Book {
-  name: string;
-  author: string;
-  img_url: string;
 }

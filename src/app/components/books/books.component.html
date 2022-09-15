@@ -1,16 +1,8 @@
 <h2>List books:</h2>
-<button (click)="toggleBooks()">
-    <span *ngIf="!isShowing">Show Books</span>
-    <span *ngIf="isShowing">Hide Books</span>
-</button>
 
 <ul *ngIf="isShowing">
     <ng-container *ngFor="let item of books; let i = index">
-        <li class="book">
-            <p class="book_id">Book: {{i+1}}</p>
-            <img [src]="item.img_url" [alt]="item.name" width="200">
-            <p class="book_title">{{item.name | titlecase}} by {{item.author}}</p>
-        </li>
+        <app-book [book]="item"></app-book>
     </ng-container>
 
 </ul>
