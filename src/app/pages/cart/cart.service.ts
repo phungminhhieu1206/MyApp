@@ -9,11 +9,13 @@ export class CartService {
 
   constructor() {}
 
-  add = (book: Book) => {
+  add(book: Book) {
+    console.log('add this book to cart');
+    
     this.cart.push(book);
   };
 
-  get = () => {
+  get() {
     return this.cart;
   };
 

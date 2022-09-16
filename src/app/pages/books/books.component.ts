@@ -22,7 +22,7 @@ export class BooksComponent implements OnInit {
     this.books = this.booksService.getBooks();
   }
 
-  toggleBooks = () => {
+  toggleBooks() {
     this.isShowing = !this.isShowing;
   };
 

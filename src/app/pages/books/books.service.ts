@@ -5,7 +5,7 @@ export class BooksService {
 
   constructor() { }
 
-  getBooks = () => {
+  getBooks() {
     return [
       {
     name: 'Happy Cookbook 1',

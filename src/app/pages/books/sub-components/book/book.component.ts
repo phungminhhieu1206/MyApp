@@ -30,9 +30,12 @@ export class BookComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  addToCart = () => {
+  addToCart() {
     this.isInCart = true;
     this.cartService.add(this.book);
+
+    console.log(`isInCart: ${this.isInCart} + cartService: ${this.cartService}`);
+
     // this.bookEmitter.emit(this.book);
   };
 
