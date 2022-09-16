@@ -11,7 +11,7 @@ export class BooksComponent implements OnInit {
   books: Book[] = [];
 
   isShowing: boolean = true;
-  card: Book[] = [];
+  // cart: Book[] = [];
 
   constructor(private booksService: BooksService) {
     console.log({ contructor: 'Contructor run' });
@@ -26,7 +26,7 @@ export class BooksComponent implements OnInit {
     this.isShowing = !this.isShowing;
   };
 
-  addToCart = (event: Book) => {
-    console.log(event);
-  };
+  // addToCart = (event: Book) => {
+  //   console.log(event);
+  // };
 }

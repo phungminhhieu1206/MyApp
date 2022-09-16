@@ -6,9 +6,10 @@ import { BooksComponent } from './pages/books/books.component';
 import { BookComponent } from './pages/books/sub-components/book/book.component';
 import { BooksService } from './pages/books/books.service';
 import { BooksModule } from './pages/books/books.module';
+import { CartComponent } from './pages/cart/cart.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, CartComponent],
   imports: [BrowserModule, FormsModule, BooksModule],
   bootstrap: [AppComponent],
 })
