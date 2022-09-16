@@ -21,7 +21,7 @@ export class BookComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  addToCard = () => {
+  addToCart = () => {
     this.bookEmitter.emit(this.book);
   };
 }

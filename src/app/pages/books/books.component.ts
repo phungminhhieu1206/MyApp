@@ -26,7 +26,7 @@ export class BooksComponent implements OnInit {
     this.isShowing = !this.isShowing;
   };
 
-  addToCard = (event: Book) => {
+  addToCart = (event: Book) => {
     console.log(event);
   };
 }
