@@ -39,7 +39,7 @@ export class BookComponent implements OnInit {
     // this.bookEmitter.emit(this.book);
   };
 
-  removeFormCart() {
+  removeFromCart() {
     this.isInCart = false;
     this.cartService.remove(this.book);
   }
