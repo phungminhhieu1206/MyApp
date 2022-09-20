@@ -1,6 +1,7 @@
 import { firebaseConfig } from './firebase.config';
 import { initializeApp } from 'firebase/app';
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from './pages/auth/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
+  constructor(private authService: AuthService) {}
+
   ngOnInit(): void {
     initializeApp(firebaseConfig);
+  }
+
+  isAuthenticated() {
+    return this.authService.isAuthenticated;
   }
 }
