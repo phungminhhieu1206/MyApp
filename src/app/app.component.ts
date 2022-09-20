@@ -15,6 +15,12 @@ export class AppComponent implements OnInit {
     initializeApp(firebaseConfig);
   }
 
+  clickCart() {
+    if (!this.authService.isAuthenticated) {
+      alert('Không có quyền truy cập !');
+    }
+  }
+
   isAuthenticated() {
     return this.authService.isAuthenticated;
   }
