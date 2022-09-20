@@ -1,6 +1,5 @@
-import { AuthModule } from './auth/auth.module';
+import { AuthModule } from './pages/auth/auth.module';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BooksModule } from './pages/books/books.module';

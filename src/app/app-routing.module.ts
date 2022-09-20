@@ -1,5 +1,5 @@
-import { RegisterComponent } from './auth/register/register.component';
-import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './pages/auth/register/register.component';
+import { LoginComponent } from './pages/auth/login/login.component';
 import { CartComponent } from './pages/cart/cart.component';
 import { BooksComponent } from './pages/books/books.component';
 import { NgModule } from '@angular/core';
